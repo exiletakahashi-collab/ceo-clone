@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高橋裕樹 | 株式会社クイヒラリ - AI営業顧問</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <!-- ヘッダー -->
+    <div class="chat-header">
+      <div class="chat-avatar">T</div>
+      <div class="chat-header-info">
+        <h1>高橋 裕樹</h1>
+        <p>株式会社クイヒラリ 代表取締役 | AI営業顧問</p>
+      </div>
+    </div>
+
+    <!-- メッセージエリア -->
+    <div class="chat-messages" id="messages"></div>
+
+    <!-- 入力エリア -->
+    <div class="chat-input-area">
+      <input type="text" id="input" placeholder="メッセージを入力..." autocomplete="off" disabled>
+      <button id="sendBtn" disabled onclick="sendMessage()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
