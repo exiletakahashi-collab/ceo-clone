@@ -1,16 +1,16 @@
-# 引き継ぎ：アクセプトに「ストック商材一覧」を追加する
+# 引き継ぎ：アクセプトに「商材一覧」を追加する
 
 ## 状況
 
 - 公開中のサイト：https://platform-nu-eight-26.vercel.app/（Vercel プロジェクト「platform」、チーム `takahashis-projects-535b314c`）。
 - 公開中の版は、掲示板・通知・料金ページに作り直したもの。そのソースは Vercel の最新の本番デプロイの中にだけある（GitHub には置いていない。オーナーのメールアドレス等を含むため、公開リポジトリには入れない）。
-- 「ストック商材一覧」（/products）は作ってローカルで確認済み。ただし、Vercel トークンの期限切れで、まだデプロイしていない。
+- 「商材一覧」（/products。ストック 13 件・ショット 3 件）は作ってローカルで確認済み。ただし、Vercel トークンの期限切れで、まだデプロイしていない。
 
 ## 追加するもの
 
 1. `files/src/lib/stock-products.ts` と `files/src/app/products/page.tsx` を、ソースの同じ場所に置く。
-2. `src/app/layout.tsx` の `navLinks` で、`{ href: "/board", label: "掲示板" },` の次に、`{ href: "/products", label: "ストック商材" },` を足す。
-3. `src/app/page.tsx` のトップの 2 つ目のボタン（`href="/billing"`「料金・できること」）を、`href="/products"`「ストック商材を見る」に変える。
+2. `src/app/layout.tsx` の `navLinks` で、`{ href: "/board", label: "掲示板" },` の次に、`{ href: "/products", label: "商材一覧" },` を足す。
+3. `src/app/page.tsx` のトップの 2 つ目のボタン（`href="/billing"`「料金・できること」）を、`href="/products"`「商材一覧を見る」に変える。
 
 ## 手順
 
@@ -27,5 +27,5 @@
 
 ## ユーザーに確認すること
 
-- 「ライフサポートno」の正式な表記と内容。
-- 3 商材それぞれの説明と報酬条件。今は「高橋から個別にご案内」と表示している。
+- 各商材の説明と報酬条件。今は名前だけを載せ、「高橋から個別にご案内」と表示している。
+- 紹介パートナー名（浅井さん・木村さん・有木さん）は月額会員にだけ表示している。
